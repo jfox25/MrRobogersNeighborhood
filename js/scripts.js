@@ -14,3 +14,27 @@ function beepBoop(number) {
   }
   return numberArray;
 }
+
+// UI Logic
+function buildUL(number) {
+  $("#output").text("");
+  numberArray = beepBoop(number);
+  let time = 100;
+  numberArray.forEach((num) => {
+    setTimeout(function () {
+      $("#output").append("<li>" + num + "</li>");
+      $("#output").children("li").addClass("show");
+    }, time);
+    time += 300;
+    console.log(time);
+  });
+}
+
+$(document).ready(() => {
+  $("#number-form").submit((event) => {
+    event.preventDefault();
+    const number = parseInt($("#number-input").val());
+    console.log(number);
+    buildUL(number);
+  });
+});
