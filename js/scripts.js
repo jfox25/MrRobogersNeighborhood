@@ -15,6 +15,10 @@ function beepBoop(number) {
   return numberArray;
 }
 
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 40);
+}
+
 // UI Logic
 function buildUL(number) {
   $("#output").text("");
@@ -25,16 +29,22 @@ function buildUL(number) {
       $("#output").append("<li>" + num + "</li>");
       $("#output").children("li").addClass("show");
     }, time);
-    time += 300;
-    console.log(time);
+    time += 250;
   });
 }
 
 $(document).ready(() => {
-  $("#number-form").submit((event) => {
+  $("#submit-button").click((event) => {
     event.preventDefault();
     const number = parseInt($("#number-input").val());
     console.log(number);
+    buildUL(number);
+  });
+  $("#random-number-button").click((event) => {
+    event.preventDefault();
+    const number = generateRandomNumber();
+    console.log(number);
+    $("#number-input").val(number);
     buildUL(number);
   });
 });
