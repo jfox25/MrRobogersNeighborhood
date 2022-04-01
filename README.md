@@ -1,3 +1,43 @@
+# Mr Roboger's Neighborhood
+
+By James Fox
+
+A website that displays a list of numbers based on the user's input, with some twists.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- GIT
+
+## Info
+
+Takes an inputed number and lists all the numbers to that number. Then replaces certain numbers with Beep, Boop, and Can I be your Neighbor.
+
+## Setup
+
+1. Clone this repository to your desktop using git clone
+2. Click on the index.html file to view the website.
+3. Input a number and watch the magic happen!
+
+## GitHub Link
+
+[Link to Code on GitHub](https://github.com/jfox25/MrRobogersNeighborhood)
+
+## Bugs
+
+No known bugs at this time.
+
+## Future Improvements
+
+- Plan to add some new style animations to the page.
+
+## License
+
+MIT
+Copyright (c) 2022 James Fox
+
 ```javascript
 # Specs
 
