@@ -31,7 +31,7 @@ h1 {
 button {
   border: none;
   background-color: rgb(134, 182, 134);
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
   margin-top: 15px;
 }
@@ -89,5 +89,13 @@ li.show {
   }
   100% {
     color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
   }
 }
