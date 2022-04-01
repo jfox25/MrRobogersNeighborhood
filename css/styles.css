@@ -1,8 +1,82 @@
+body {
+  font-size: 18px;
+  /* text-align: center; */
+  background-color: whitesmoke;
+  color: #333;
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+}
+.header {
+  background-image: url("/images/Neighborhood.jpeg");
+  background-repeat: round;
+  background-position: 0 -30px;
+  background-size: auto 100%;
+  width: fit-content;
+}
+h1 {
+  font-family: "BIZ UDMincho", serif;
+}
+#number-form {
+  text-align: center;
+  left: 0px;
+  background-color: whitesmoke;
+  width: 200px;
+  padding: 20px;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+ul {
+  /* display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px; */
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
 li {
-  transition: all 0.4s ease-out;
+  /* transform: rotateY(-90deg);
+  transition: all 0.5s cubic-bezier(0.36, -0.64, 0.34, 1.76); */
   opacity: 0;
+  width: 200px;
+  list-style: none;
+  height: 45px;
+  margin-right: 150px;
+}
+.beep {
+  font-family: "Anybody", cursive;
+  color: blueviolet;
+}
+
+.boop {
+  font-family: "Kanit", sans-serif;
+  color: darkcyan;
+}
+
+.neighbor {
+  font-family: "Ingrid Darling", cursive;
+  font-size: 25px;
+  color: goldenrod;
 }
 
 li.show {
   opacity: 1;
+  animation-name: fly-in;
+  animation-duration: 4s;
+}
+
+@keyframes fly-in {
+  0% {
+    color: red;
+  }
+  33% {
+    color: orangered;
+  }
+  66% {
+    color: orange;
+  }
+  100% {
+    color: black;
+  }
 }

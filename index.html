@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody&family=BIZ+UDMincho&family=Ingrid+Darling&family=Kanit:wght@500&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Mr Robogers Neighborhood</title>
   </head>
   <body>
-    <form id="number-form">
-      <div class="form-group">
-        <label for="">Please Enter a Number</label>
-        <input id="number-input" type="number" />
+    <div class="container">
+      <div class="header">
+        <h1>Mr Roboger's Neighborhood</h1>
+        <form id="number-form">
+          <div class="form-group">
+            <label for="">Please Enter a Number:</label>
+            <input id="number-input" type="number" />
+          </div>
+          <button id="submit-button" type="submit">Submit</button>
+          <button id="random-number-button">Random Number!</button>
+        </form>
+        <ul id="output"></ul>
       </div>
-      <button id="submit-button" type="submit">Submit</button>
-      <button id="random-number-button">Random Number!</button>
-      <ul id="output"></ul>
-    </form>
+    </div>
   </body>
 </html>

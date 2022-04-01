@@ -26,7 +26,15 @@ function buildUL(number) {
   let time = 100;
   numberArray.forEach((num) => {
     setTimeout(function () {
-      $("#output").append("<li>" + num + "</li>");
+      if (num === "Beep!") {
+        $("#output").append("<li class='beep'>" + num + "</li>");
+      } else if (num === "Boop!") {
+        $("#output").append("<li class='boop'>" + num + "</li>");
+      } else if (num === "Won't you be my neighbor?") {
+        $("#output").append("<li class='neighbor'>" + num + "</li>");
+      } else {
+        $("#output").append("<li class='number'>" + num + "</li>");
+      }
       $("#output").children("li").addClass("show");
     }, time);
     time += 250;
