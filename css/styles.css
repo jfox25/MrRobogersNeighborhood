@@ -1,19 +1,19 @@
 body {
   font-size: 18px;
-  /* text-align: center; */
+  text-align: center;
   background-color: whitesmoke;
   color: #333;
   font-family: "Roboto Mono", monospace;
 }
 .container {
-  height: 1vh;
+  width: 80%;
+  margin: auto;
 }
 .header {
   background-image: url("/images/Neighborhood.jpeg");
   background-repeat: round;
   background-position: 0 -30px;
   background-size: auto 100%;
-  width: fit-content;
 }
 h1 {
   margin-top: 0;
@@ -21,26 +21,25 @@ h1 {
 }
 #number-form {
   text-align: center;
-  left: 0px;
   background-color: whitesmoke;
-  width: 200px;
+  width: 30%;
+  margin: auto;
   padding: 20px;
   border: 3px solid green;
   border-radius: 5px;
-  margin-bottom: 50px;
 }
 
 ul {
-  display: flex;
-  flex-direction: row;
-  background-color: whitesmoke;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 li {
   opacity: 0;
   width: 150px;
+  margin: auto;
   list-style: none;
-  height: 45px;
-  margin-right: 100px;
+  height: 65px;
 }
 .beep {
   font-family: "Anybody", cursive;
